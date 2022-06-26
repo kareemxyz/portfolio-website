@@ -11,6 +11,7 @@
 
     .about-text {
         flex: 0.7;
+        overflow: visible;
 
         @media (max-width: #{$mobile-breakpoint}) {
             flex: 0.5;
