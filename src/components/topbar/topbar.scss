@@ -1,0 +1,27 @@
+@import "../../global.scss";
+
+.topbar {
+    width: 60%;
+    height: 70px;
+    padding: 0 20% 0 20%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+    @media (max-width: #{$mobile-breakpoint}) {
+        display: none;
+    }
+
+    .wrapper {
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        > a {
+            font-weight: 500;
+            font-size: 1.6em;
+            color: $primaryColor;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@import './global.scss';
+
+.app {
+    height: 100vh;
+
+    .sections {
+        padding: 0 20% 0 20%;
+        height: calc(100vh - 70px);
+        position: relative;
+        top: 70px;
+        scroll-behavior: smooth;
+        scroll-snap-type: y proximity;
+
+        // scrollbar-width: none;
+        // &::-webkit-scrollbar {
+        //     display: none;
+        // }
+        @media (max-width: #{$mobile-breakpoint}) {
+            padding: 0 10% 0 10%;
+            height: 100vh;
+            top: 0px;
+        }
+
+        >* {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 100px;
+            height: calc(100vh - 70px);
+            // scroll-snap-align: start;
+        }
+    }
+}

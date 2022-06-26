@@ -1,0 +1,37 @@
+@import "../../global.scss";
+
+#footer {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+
+    a {
+        margin: 50px 10px 50px 10px;
+        padding: 20px;
+        background-color: $accentColor;
+        color: $blackColor;
+        text-decoration: none;
+        transition: all 0.5s ease;
+        font-size: 2em;
+        border-radius: 50%;
+
+        &:hover {
+            color: $secondaryColor;
+            font-size: 2.5em;
+        }
+    }
+
+    .icon-instagram:before {
+        content: "\ea92";
+    }
+
+    .icon-github:before {
+        content: "\eab0";
+    }
+
+    .icon-linkedin:before {
+        content: "\eaca";
+    }
+}

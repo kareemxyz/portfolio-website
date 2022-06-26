@@ -1,0 +1,27 @@
+$primaryColor: #323232;
+$secondaryColor: #5F5F5F;
+$blackColor: #242424;
+$accentColor: #DDDDDD;
+$backgroundColor: #f4f4f4;
+
+$mobile-breakpoint: 768px;
+$tablet-breakpoint: 1758px;
+
+.fadeIn {
+    animation-name: fade-in;
+    animation-duration: 1s;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    0% { 
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

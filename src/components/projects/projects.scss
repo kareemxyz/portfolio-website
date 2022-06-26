@@ -1,0 +1,85 @@
+@import "../../global.scss";
+
+#projects {
+    flex-direction: column;
+    overflow: visible;
+
+    @media (max-width: #{$mobile-breakpoint}) {
+        height: fit-content;
+    }
+
+    @media (max-width: #{$tablet-breakpoint}) {
+        height: fit-content;
+    }
+
+    h1 {
+        font-weight: 900;
+        font-size: clamp(3.2em, 8vw, 9em);
+        color: $blackColor;
+        margin-bottom: 60px;
+        overflow: visible;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        overflow: visible;
+
+        @media (max-width: #{$mobile-breakpoint}) {
+            justify-content: center;
+        }
+
+        @media (max-width: #{$tablet-breakpoint}) {
+            width: 600px;
+            justify-content: center;
+        }
+
+        .project {
+            width: 350px;
+            height: 440px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: visible;
+
+            .image-container {
+                width: 350px;
+                height: 350px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                overflow: hidden;
+
+                img {
+                    height: 350px;
+                    object-fit: scale-down;
+                    border-radius: 20px;
+                    z-index: 1;
+                    transition: all 0.5s ease;
+                }
+            }
+
+            h3 {
+                position: absolute;
+                text-align: center;
+                padding: 30px;
+                font-weight: 600;
+                font-size: 1.4em;
+                top: 85%;
+                color: $primaryColor;
+            }
+
+            &:hover {
+                img {
+                    opacity: 0.8;
+                    height: 290px;
+                }
+            }
+        }
+    }
+}

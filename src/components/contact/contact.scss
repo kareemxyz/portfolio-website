@@ -1,0 +1,112 @@
+@import "../../global.scss";
+
+#contact {
+    @media (max-width: #{$mobile-breakpoint}) {
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        overflow: visible;
+        margin-top: 150px
+    }
+
+    .contact-image {
+        flex: 0.3;
+
+        @media (max-width: #{$mobile-breakpoint}) {
+            display: none;
+        }
+
+        img {
+            width: calc(410px * 0.9);
+            height: calc(579px * 0.9);
+            object-fit: cover;
+            @media (max-width: #{$tablet-breakpoint}) {
+                width: 100%;
+            }
+        }
+    }
+
+    .contact-body {
+        flex: 0.7;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        @media (max-width: #{$mobile-breakpoint}) {
+            flex: 1;
+            align-items: center;
+            overflow: visible;
+        }
+
+        .bold-text {
+            font-weight: 900;
+            font-size: clamp(4em, 8vw, 9em);
+            color: $blackColor;
+            margin-bottom: 40px;
+        }
+
+        .contact-text {
+            margin-bottom: 20px;
+            font-weight: 500;
+            font-size: 1.4em;
+            color: $secondaryColor;
+            @media (max-width: #{$mobile-breakpoint}) {
+                text-align: center;
+            }
+        }
+
+        .contact-email {
+            color: $primaryColor;
+            font-weight: 500;
+        }
+
+        form {
+            width: 70%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            overflow: visible;
+
+            @media (max-width: #{$mobile-breakpoint}) {
+                align-items: center;
+                width: 80%;
+            }
+
+            .contact-interface {
+                padding: 15px;
+                margin-bottom: 10px;
+                font-size: 1em;
+                font-weight: 600;
+                border-width: 1px;
+                border-style: solid;
+                background-color: $backgroundColor;
+                color: $primaryColor;
+                border-color: $accentColor;
+            }
+
+            input {
+                width: 90%;
+            }
+
+            textarea {
+                width: 90%;
+                height: 200px;
+                resize: none;
+            }
+
+            .submit-button {
+                padding: 15px;
+                width: 175px;
+                background-color: $accentColor;
+                transition: all 0.5s ease;
+            }
+
+            .submit-button:hover {
+                background-color: $secondaryColor;
+                color: $accentColor;
+            }
+        }
+    }
+}

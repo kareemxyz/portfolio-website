@@ -1,0 +1,77 @@
+@import "../../global.scss";
+
+#about {
+    @media (max-width: #{$mobile-breakpoint}) {
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        overflow: visible;
+        margin-bottom: 200px;
+    }
+
+    .about-text {
+        flex: 0.7;
+
+        @media (max-width: #{$mobile-breakpoint}) {
+            flex: 0.5;
+            text-align: center;
+        }
+
+        .bold-text {
+            padding-left: 10px;
+            font-weight: 900;
+            font-size: clamp(5em, 8vw, 9em);
+            color: $blackColor;
+        }
+
+        .body-text {
+            width: 70%;
+            font-weight: 450;
+            font-size: 1.5em;
+            color: $primaryColor;
+
+            @media (max-width: #{$mobile-breakpoint}) {
+                width: auto;
+                text-align: center;
+                justify-content: center;
+            }
+        }
+
+        .body-link {
+            display: flex;
+            font-weight: 600;
+            text-decoration: none;
+            color: $secondaryColor;
+            margin-bottom: 10px;
+
+            @media (max-width: #{$mobile-breakpoint}) {
+                text-align: center;
+                justify-content: center;
+            }
+        }
+
+        .body-resume {
+            margin: 70px 0 70px 0;
+        }
+    }
+
+    .about-image {
+        position: relative;
+        flex: 0.3;
+        top: 40px;
+
+        @media (max-width: #{$tablet-breakpoint}) {
+            flex: 0.5;
+        }
+
+        img {
+            width: calc(410px * 0.9);
+            height: calc(579px * 0.9);
+            object-fit: cover;
+            float: right;
+            @media (max-width: #{$tablet-breakpoint}) {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+@import "../../global.scss";
+
+.intro {
+    @media (max-width: #{$mobile-breakpoint}) {
+        flex-direction: column;
+        align-items: center;
+    }
+    .wrapper {
+        position: relative;
+        bottom: 30px;
+        margin-top: 70px;
+
+        .landing-text {
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.25em;
+            letter-spacing: 0.065em;
+            color: $secondaryColor;
+            @media (max-width: #{$mobile-breakpoint}) {
+                font-size: 0.9375em;
+            }
+        }
+
+        .landing-name {
+            text-align: center;
+            font-weight: 800;
+            font-size: 5em;
+            letter-spacing: 0.185em;
+            color: $primaryColor;
+            @media (max-width: #{$mobile-breakpoint}) {
+                font-size: 3em;
+            }
+        }
+    }
+}
