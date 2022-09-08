@@ -9,13 +9,11 @@ export default function About() {
     <div className="about" id="about">
       <div className={`${'about-text'} ${visibleElement_1 ? "fadeIn" : "hidden"}`} ref={refElement_1}>
         <h1 className="bold-text">ABOUT</h1>
-        <p className="body-text">Hi! I'm Kareem, a computer science student from Massachusetts. I aim to deepen my understanding in various areas of technology and product development.</p>
+        <p className="body-text">Hi! I'm Kareem, an aspiring Computer Science student from Massachusetts. I aim to deepen my understanding in various areas of technology and product development.</p>
         <a className="body-text body-link body-resume" href="assets/KareemElewa_Resume.pdf" target="_blank" >Check out my resume!</a>
-        <p className="body-text body-link">Contact me here:</p>
-        <a className="body-text" href="mailto:kareem.elew@gmail.com">kareem.elew@gmail.com</a>
       </div>
       <div className={`${'about-image'} ${visibleElement_2 ? "fadeIn" : "hidden"}`} ref={refElement_2}>
-        <img src="assets/Kareem_1.png" alt="Kareem" />
+        <img src="assets/Kareem_1.png" alt="Kareem" draggable="false" />
       </div>
     </div>
   );
