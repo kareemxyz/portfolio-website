@@ -4,8 +4,8 @@ import "./footer.scss"
 
 export default function Footer() {
   const { ref: refElement_1, inView: visibleElement_1 } = useInView({ triggerOnce: true, threshold : 0.1});
-  const { ref: refElement_2, inView: visibleElement_2 } = useInView({ triggerOnce: true, threshold : 0.1, delay: 200 });
-  const { ref: refElement_3, inView: visibleElement_3 } = useInView({ triggerOnce: true, threshold : 0.1, delay: 400 });
+  const { ref: refElement_2, inView: visibleElement_2 } = useInView({ triggerOnce: true, threshold : 0.1, delay: 300 });
+  const { ref: refElement_3, inView: visibleElement_3 } = useInView({ triggerOnce: true, threshold : 0.1, delay: 600 });
   return (
     <div className="footer" id="footer">
       <a className={`${'icon-linkedin'} ${visibleElement_1 ? "fadeIn" : "hidden"}`} ref={refElement_1} href="https://www.linkedin.com/in/kareemelewa/" target="_blank" rel="noreferrer">

@@ -24,7 +24,7 @@
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
         flex-wrap: wrap;
         overflow: visible;
 
@@ -38,72 +38,64 @@
         }
 
         .project {
-            width: 350px;
-            height: 440px;
+            margin: 90px 25px 25px 25px;
             display: flex;
             align-items: center;
             justify-content: center;
             overflow: visible;
+            -webkit-transition: all 0.25s ease;
+            -moz-transition: all 0.25s ease;
+            -o-transition: all 0.25s ease;
+            transition: all 0.25s ease;
+
+            h3 {
+                position: absolute;
+                text-align: center;
+                font-weight: 600;
+                font-size: 1.4em;
+                padding-bottom: 360px;
+                color: $primaryColor;
+                -webkit-transition: all 0.25s ease;
+                -moz-transition: all 0.25s ease;
+                -o-transition: all 0.25s ease;
+                transition: all 0.25s ease;
+            }
 
             .project-card {
-                width: 300px;
-                height: 350px;
                 display: flex;
+                outline-style: solid;
                 align-items: center;
                 justify-content: center;
+                text-align: center;
                 position: relative;
                 overflow: visible;
+                width: 300px;
+                height: 300px;
+                border-radius: 20px;
+                outline-width: 6px;
+                outline-color: $blackColor;
+                background-color: $backgroundColor;
+                -webkit-transition: all 0.25s ease;
+                -moz-transition: all 0.25s ease;
+                -o-transition: all 0.25s ease;
+                transition: all 0.25s ease;
 
-                .extra-information {
-                    width: 300px;
-                    height: 300px;
-                    opacity: 0;
-                    z-index: -1;
-                    border-radius: 20px;
-                    position: absolute;
-                    background-color: $backgroundColor;
-                    display: flex;
-                    align-items: center;
-                    text-align: center;
-                    transition: all 0.5s ease;
-                    outline-color: $blackColor;
-                    outline-width: 0px;
-                    outline-style: solid;
-
-                    p {
-                        padding: 20px;
-                        font-weight: 400;
-                        font-size: 1.4em;
-                    }
-                }
-                
-                img {
-                    height: 300px;
-                    object-fit: scale-down;
-                    border-radius: 20px;
-                    transition: all 0.5s ease;
-                }
-
-                h3 {
-                    position: absolute;
-                    text-align: center;
-                    padding-top: 50px;
-                    font-weight: 600;
+                a {
+                    text-decoration: none;
+                    padding: 20px;
+                    font-weight: 500;
                     font-size: 1.4em;
-                    top: 85%;
                     color: $primaryColor;
                 }
             }
 
             &:hover {
-                img {
-                    opacity: 0;
-                    height: 250px;
+                .project-card {
+                    padding: 5px;
                 }
-                .extra-information {
-                    opacity: 1;
-                    outline-width: 6px;
-                    outline-style: solid;
+
+                h3 {
+                    padding-bottom: 370px;
                 }
             }
         }
