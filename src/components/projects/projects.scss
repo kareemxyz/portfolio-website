@@ -38,57 +38,61 @@
         }
 
         .project {
-            margin: 90px 25px 25px 25px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             overflow: visible;
-            -webkit-transition: all 0.25s ease;
-            -moz-transition: all 0.25s ease;
-            -o-transition: all 0.25s ease;
-            transition: all 0.25s ease;
-
-            h3 {
-                position: absolute;
-                text-align: center;
-                font-weight: 600;
-                font-size: 1.4em;
-                padding-bottom: 360px;
-                color: $primaryColor;
-                -webkit-transition: all 0.25s ease;
-                -moz-transition: all 0.25s ease;
-                -o-transition: all 0.25s ease;
-                transition: all 0.25s ease;
-            }
-
-            .project-card {
+            
+            .project-contents {
+                margin: 90px 25px 25px 25px;
                 display: flex;
-                outline-style: solid;
                 align-items: center;
                 justify-content: center;
-                text-align: center;
-                position: relative;
                 overflow: visible;
-                width: 300px;
-                height: 300px;
-                -webkit-border-radius: 20px;
-                -moz-border-radius: 20px;
-                -o-border-radius: 20px;
-                border-radius: 20px;
-                outline-width: 6px;
-                outline-color: $blackColor;
-                background-color: $backgroundColor;
                 -webkit-transition: all 0.25s ease;
                 -moz-transition: all 0.25s ease;
                 -o-transition: all 0.25s ease;
                 transition: all 0.25s ease;
 
-                a {
-                    text-decoration: none;
-                    padding: 20px;
-                    font-weight: 500;
+                h3 {
+                    position: absolute;
+                    text-align: center;
+                    font-weight: 600;
                     font-size: 1.4em;
+                    padding-bottom: 360px;
                     color: $primaryColor;
+                    -webkit-transition: all 0.25s ease;
+                    -moz-transition: all 0.25s ease;
+                    -o-transition: all 0.25s ease;
+                    transition: all 0.25s ease;
+                }
+
+                .project-card {
+                    display: flex;
+                    outline-style: solid;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    position: relative;
+                    overflow: visible;
+                    width: 300px;
+                    height: 300px;
+                    -webkit-border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    -o-border-radius: 20px;
+                    border-radius: 20px;
+                    outline-width: 6px;
+                    outline-color: $blackColor;
+                    background-color: $backgroundColor;
+                    -webkit-transition: all 0.25s ease;
+                    -moz-transition: all 0.25s ease;
+                    -o-transition: all 0.25s ease;
+                    transition: all 0.25s ease;
+
+                    a {
+                        text-decoration: none;
+                        padding: 20px;
+                        font-weight: 500;
+                        font-size: 1.4em;
+                        color: $primaryColor;
+                    }
                 }
             }
 

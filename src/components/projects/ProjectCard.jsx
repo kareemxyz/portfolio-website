@@ -9,11 +9,13 @@ export default function ProjectCard({ name, description, link, index }) {
 
     return (
         <div className={`${"project"} ${visibleElement ? "fadeIn" : "hidden"}`} ref={refElement}>
-            <h3>{name}</h3>
-            <div className="project-card">
-                <a href={link} target={link ? "_blank" : ""} rel="noreferrer" draggable="false">
-                    <p>{description}</p>
-                </a>
+            <div className="project-contents">
+                <h3>{name}</h3>
+                <div className="project-card">
+                    <a href={link} target={link ? "_blank" : ""} rel="noreferrer" draggable="false">
+                        <p>{description}</p>
+                    </a>
+                </div>
             </div>
         </div>
     )

@@ -10,6 +10,12 @@ $tablet-breakpoint: 1758px;
 .fadeIn {
     animation-name: fade-in;
     animation-duration: 1s;
+    -o-animation-name: fade-in;
+    -o-animation-duration: 1s;
+    -moz-animation-name: fade-in;
+    -moz-animation-duration: 1s;
+    -webkit-animation-name: fade-in;
+    -webkit-animation-duration: 1s;
 }
 
 .hidden {
