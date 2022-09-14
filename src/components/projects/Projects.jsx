@@ -8,12 +8,12 @@ export default function Projects() {
 
   return (
     <div className="projects" id="projects">
-      <h1 className={visibleElement_1 ? "fadeIn" : "hidden"} ref={refElement_1}>PROJECTS</h1>
+      <h1 className={visibleElement_1 ? "fade-in-transition" : "hidden"} ref={refElement_1}>PROJECTS</h1>
       <div className="container">
         <ProjectCard
           name="Stock Forecaster"
           description="A simple stock closing price forecaster that uses LSTM Neural Networks in Python 3."
-          link="https://github.com/kareemxyz/stock-forecaster"
+          link="https://github.com/kareemxyz/stock_forecaster"
           index="0"
         />
         <ProjectCard

@@ -39,17 +39,20 @@
 
         .project {
             overflow: visible;
-            
+
+            .ease-transition {
+                -webkit-transition: all 0.25s ease;
+                -moz-transition: all 0.25s ease;
+                -o-transition: all 0.25s ease;
+                transition: all 0.25s ease;
+            }
+
             .project-contents {
                 margin: 90px 25px 25px 25px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 overflow: visible;
-                -webkit-transition: all 0.25s ease;
-                -moz-transition: all 0.25s ease;
-                -o-transition: all 0.25s ease;
-                transition: all 0.25s ease;
 
                 h3 {
                     position: absolute;
@@ -58,10 +61,6 @@
                     font-size: 1.4em;
                     padding-bottom: 360px;
                     color: $primaryColor;
-                    -webkit-transition: all 0.25s ease;
-                    -moz-transition: all 0.25s ease;
-                    -o-transition: all 0.25s ease;
-                    transition: all 0.25s ease;
                 }
 
                 .project-card {
@@ -74,17 +73,14 @@
                     overflow: visible;
                     width: 300px;
                     height: 300px;
+                    border-radius: 20px;
                     -webkit-border-radius: 20px;
                     -moz-border-radius: 20px;
                     -o-border-radius: 20px;
-                    border-radius: 20px;
                     outline-width: 6px;
                     outline-color: $blackColor;
                     background-color: $backgroundColor;
-                    -webkit-transition: all 0.25s ease;
-                    -moz-transition: all 0.25s ease;
-                    -o-transition: all 0.25s ease;
-                    transition: all 0.25s ease;
+
 
                     a {
                         text-decoration: none;

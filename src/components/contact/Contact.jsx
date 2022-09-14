@@ -7,10 +7,10 @@ export default function About() {
   const { ref: refElement_2, inView: visibleElement_2 } = useInView({ triggerOnce: true, threshold: 0.1, delay: 200 });
   return (
     <div className="contact" id="contact">
-      <div className={`${'contact-image'} ${visibleElement_1 ? "fadeIn" : "hidden"}`} ref={refElement_1}>
+      <div className={`${'contact-image'} ${visibleElement_1 ? "fade-in-transition" : "hidden"}`} ref={refElement_1}>
         <img src="assets/Kareem_2.png" alt="Kareem" draggable="false" />
       </div>
-      <div className={`${'contact-body'} ${visibleElement_2 ? "fadeIn" : "hidden"}`} ref={refElement_2}>
+      <div className={`${'contact-body'} ${visibleElement_2 ? "fade-in-transition" : "hidden"}`} ref={refElement_2}>
         <h1 className="bold-text">CONTACT</h1>
         <p className="contact-text">Email: <a className="contact-email" href="mailto:kareem.elew@gmail.com">kareem.elew@gmail.com</a></p>
         <form action="https://formspree.io/f/xvolnwob" method="POST">
