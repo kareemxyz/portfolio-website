@@ -73,14 +73,10 @@
                     overflow: visible;
                     width: 300px;
                     height: 300px;
-                    border-radius: 20px;
-                    -webkit-border-radius: 20px;
-                    -moz-border-radius: 20px;
-                    -o-border-radius: 20px;
+                    border-radius: 10%;
                     outline-width: 6px;
                     outline-color: $blackColor;
                     background-color: $backgroundColor;
-
 
                     a {
                         text-decoration: none;
