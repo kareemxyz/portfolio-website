@@ -1,102 +1,105 @@
 @import "../../global.scss";
 
 #projects {
-    flex-direction: column;
+  flex-direction: column;
+  overflow: visible;
+
+  @media (max-width: #{$mobile-breakpoint}) {
+    height: fit-content;
+  }
+
+  @media (max-width: #{$tablet-breakpoint}) {
+    height: fit-content;
+  }
+
+  h1 {
+    font-weight: 900;
+    font-size: clamp(3.2em, 8vw, 9em);
+    color: $blackColor;
+    margin-bottom: 60px;
+    overflow: visible;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     overflow: visible;
 
     @media (max-width: #{$mobile-breakpoint}) {
-        height: fit-content;
+      justify-content: center;
     }
 
     @media (max-width: #{$tablet-breakpoint}) {
-        height: fit-content;
+      width: 600px;
+      justify-content: center;
     }
 
-    h1 {
-        font-weight: 900;
-        font-size: clamp(3.2em, 8vw, 9em);
-        color: $blackColor;
-        margin-bottom: 60px;
-        overflow: visible;
-    }
+    .project {
+      overflow: visible;
 
-    .container {
-        width: 100%;
+      .ease-transition {
+        -webkit-transition: all 0.25s ease;
+        -moz-transition: all 0.25s ease;
+        -o-transition: all 0.25s ease;
+        transition: all 0.25s ease;
+      }
+
+      .project-contents {
+        margin: 90px 25px 25px 25px;
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-wrap: wrap;
         overflow: visible;
 
-        @media (max-width: #{$mobile-breakpoint}) {
-            justify-content: center;
+        h3 {
+          position: absolute;
+          text-align: center;
+          font-weight: 600;
+          font-size: 1.4em;
+          padding-bottom: 360px;
+          color: $primaryColor;
         }
 
-        @media (max-width: #{$tablet-breakpoint}) {
-            width: 600px;
-            justify-content: center;
+        .project-card {
+          display: flex;
+          outline-style: solid;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          position: relative;
+          overflow: visible;
+          width: 300px;
+          height: 300px;
+          -webkit-border-radius: 50px;
+          -moz-border-radius: 50px;
+          -ms-border-radius: 50px;
+          border-radius: 10%;
+          outline-width: 6px;
+          outline-color: $blackColor;
+          background-color: $backgroundColor;
+
+          a {
+            text-decoration: none;
+            padding: 20px;
+            font-weight: 500;
+            font-size: 1.4em;
+            color: $primaryColor;
+          }
+        }
+      }
+
+      &:hover {
+        .project-card {
+          padding: 5px;
         }
 
-        .project {
-            overflow: visible;
-
-            .ease-transition {
-                -webkit-transition: all 0.25s ease;
-                -moz-transition: all 0.25s ease;
-                -o-transition: all 0.25s ease;
-                transition: all 0.25s ease;
-            }
-
-            .project-contents {
-                margin: 90px 25px 25px 25px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                overflow: visible;
-
-                h3 {
-                    position: absolute;
-                    text-align: center;
-                    font-weight: 600;
-                    font-size: 1.4em;
-                    padding-bottom: 360px;
-                    color: $primaryColor;
-                }
-
-                .project-card {
-                    display: flex;
-                    outline-style: solid;
-                    align-items: center;
-                    justify-content: center;
-                    text-align: center;
-                    position: relative;
-                    overflow: visible;
-                    width: 300px;
-                    height: 300px;
-                    border-radius: 10%;
-                    outline-width: 6px;
-                    outline-color: $blackColor;
-                    background-color: $backgroundColor;
-
-                    a {
-                        text-decoration: none;
-                        padding: 20px;
-                        font-weight: 500;
-                        font-size: 1.4em;
-                        color: $primaryColor;
-                    }
-                }
-            }
-
-            &:hover {
-                .project-card {
-                    padding: 5px;
-                }
-
-                h3 {
-                    padding-bottom: 370px;
-                }
-            }
+        h3 {
+          padding-bottom: 370px;
         }
+      }
     }
+  }
 }

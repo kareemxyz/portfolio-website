@@ -23,9 +23,9 @@ export default function Projects() {
           index="1"
         />
         <ProjectCard
-          name="Command REST API"
-          description="An API supporting CRUD methods that returns CLI commands. (In Progress)"
-          link=""
+          name="Command Line REST API"
+          description="A REST API that stores command line snippets along with a short description with what the command does."
+          link="https://github.com/kareemxyz/command-rest-api"
           index="2"
         />
       </div>
