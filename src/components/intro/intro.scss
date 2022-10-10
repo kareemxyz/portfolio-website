@@ -9,6 +9,7 @@
         position: relative;
         bottom: 30px;
         margin-top: 70px;
+        overflow: visible;
 
         .landing-text {
             text-align: center;
@@ -29,6 +30,36 @@
             color: $primaryColor;
             @media (max-width: #{$mobile-breakpoint}) {
                 font-size: 3em;
+            }
+        }
+
+        .scroll-down {
+            position: absolute;
+            margin-top: 29%;
+            left: 50%;
+            height: 30px;
+            width: 30px;
+            border: 2px solid black;
+            rotate: 45deg;
+            border-top: transparent;
+            border-left: transparent;
+            cursor: pointer;
+            animation: scroll-down 1s ease-in-out infinite;
+        }
+
+        @keyframes scroll-down {
+            0% { 
+                opacity: 0;
+            }
+            30% {
+                opacity: 1;
+            }
+            60% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                margin-top: 31%;
             }
         }
     }
