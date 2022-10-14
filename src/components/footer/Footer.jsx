@@ -14,7 +14,7 @@ export default function Footer() {
       <a className={`${'icon-github'} ${visibleElement_2 ? "fade-in-transition" : "hidden"}`} ref={refElement_2} href="https://github.com/kareemxyz" target="_blank" rel="noreferrer">
         <p></p>
       </a>
-      <a className={`${'icon-instagram'} ${visibleElement_3 ? "fade-in-transition" : "hidden"}`} ref={refElement_3} href="https://www.instagram.com/kareem.elewa/" target="_blank" rel="noreferrer">
+      <a className={`${'icon-mail'} ${visibleElement_3 ? "fade-in-transition" : "hidden"}`} ref={refElement_3} href="mailto:kareem.elew@gmail.com" target="_blank" rel="noreferrer">
         <p></p>
       </a>
     </div>
