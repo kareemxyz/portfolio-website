@@ -18,7 +18,7 @@ export default function Projects() {
         />
         <ProjectCard
           name="Cartoon Smackdown Ultimate"
-          description="A Roblox PvP combat game played over 1.9 million times, peaking at 700,000 monthly active users."
+          description="A Roblox PvP combat game played over 2 million times, peaking at 700,000 monthly active users."
           link="https://www.roblox.com/games/6694317558/NEW-CODE-Cartoon-SmackDown-Ultimate#!/"
           index="1"
         />
